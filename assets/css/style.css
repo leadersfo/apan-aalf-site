@@ -122,6 +122,32 @@ a:hover { color: var(--teal); }
   min-height: 420px;
   background: url('../img/banner.png') center center / cover no-repeat;
 }
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.55;
+  pointer-events: none;
+  animation: blobDrift 18s ease-in-out infinite alternate;
+}
+.hero::before {
+  width: 420px;
+  height: 420px;
+  left: -80px;
+  top: -80px;
+  background: radial-gradient(circle at 30% 30%, rgba(19, 233, 154, 0.9), rgba(19, 233, 154, 0.15) 40%, transparent 70%);
+}
+.hero::after {
+  width: 480px;
+  height: 480px;
+  right: -100px;
+  bottom: -110px;
+  background: radial-gradient(circle at 30% 30%, rgba(64, 159, 255, 0.8), rgba(255, 214, 63, 0.22) 38%, transparent 70%);
+  animation-delay: 2s;
+}
 .hero-net {
   display: none;
 }
@@ -171,6 +197,18 @@ a:hover { color: var(--teal); }
   display: block;
   font-size: 12px;
   margin-bottom: 4px;
+}
+
+@keyframes blobDrift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.9);
+  }
+  50% {
+    transform: translate3d(30px, -20px, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(-25px, 25px, 0) scale(1.16);
+  }
 }
 
 @media (max-width: 720px) {
