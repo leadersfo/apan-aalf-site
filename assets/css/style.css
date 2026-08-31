@@ -116,11 +116,14 @@ a:hover { color: var(--teal); }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  background:
-    linear-gradient(90deg, rgba(9,16,30,0.55) 0%, rgba(9,16,30,0.25) 45%, rgba(9,16,30,0.15) 100%),
-    url("../img/banner.png") left 20% top 22% / cover no-repeat;
+  background-color: var(--night);
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   color: var(--white);
   overflow: hidden;
+  min-height: 520px;
   padding: 92px 0 76px;
 }
 .hero-net {
