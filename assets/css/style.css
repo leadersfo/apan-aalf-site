@@ -6,17 +6,18 @@
    ========================================================================== */
 
 :root {
-  --ink:        #12181F;
-  --paper:      #EEF1EF;
-  --paper-dim:  #E2E7E4;
-  --night:      #0B1220;
-  --night-2:    #101B2E;
-  --line:       #C9D0CB;
-  --line-dark:  #26344A;
-  --teal:       #2AD8C6;
-  --teal-dim:   #1A8F84;
-  --amber:      #F2B84B;
-  --white:      #F7FAF9;
+  --ink:        #16274A;
+  --paper:      #FFFFFF;
+  --paper-dim:  #F1F4F8;
+  --night:      #0F2A4A;
+  --night-2:    #17385E;
+  --line:       #D7DEE6;
+  --line-dark:  #2C4568;
+  --teal:       #2F7FC1;
+  --teal-dim:   #1F5E96;
+  --amber:      #C9A24D;
+  --orange:     #E07A2E;
+  --white:      #FFFFFF;
 
   --font-display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
   --font-body:    "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -165,7 +166,7 @@ section { padding: 68px 0; }
 section.alt { background: var(--paper-dim); }
 .section-head { margin-bottom: 34px; max-width: 60ch; }
 .section-head h2 { font-size: 30px; }
-.section-head p { color: #45524B; }
+.section-head p { color: #46536B; }
 
 .grid-2 { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -180,14 +181,14 @@ section.alt { background: var(--paper-dim); }
   padding: 26px 24px;
 }
 .card h3 { font-size: 17px; margin-bottom: 10px; }
-.card p { font-size: 15.5px; color: #3D4A44; margin: 0; }
+.card p { font-size: 15.5px; color: #3C4A63; margin: 0; }
 
 ul.check { list-style: none; margin: 0; padding: 0; }
 ul.check li {
   padding-left: 26px;
   position: relative;
   margin-bottom: 14px;
-  color: #2C3733;
+  color: #2B3752;
 }
 ul.check li::before {
   content: "";
@@ -246,7 +247,7 @@ ul.check li::before {
 .report-body { padding: 54px 0 30px; }
 .report-body .lede {
   font-size: 19px;
-  color: #232B26;
+  color: #212A40;
   max-width: 62ch;
 }
 .pdf-cta {
