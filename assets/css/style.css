@@ -74,9 +74,9 @@ a:hover { color: var(--teal); }
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(11, 18, 32, 0.92);
+  background: var(--night);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--line-dark);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .site-header .wrap {
   display: flex;
