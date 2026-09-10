@@ -330,6 +330,65 @@ ul.check li::before {
   color: var(--gray);
   max-width: 62ch;
 }
+.report-body h3 {
+  font-size: 22px;
+  margin-top: 44px;
+}
+.report-body h4 {
+  font-size: 16.5px;
+  margin-top: 30px;
+  color: var(--teal-dim);
+}
+.report-body p { max-width: 68ch; }
+.report-body ul { max-width: 68ch; color: var(--gray); padding-left: 22px; }
+.report-body ul li { margin-bottom: 8px; }
+
+.report-figure {
+  margin: 30px 0;
+  max-width: 780px;
+}
+.report-figure img {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--line);
+}
+.report-figure figcaption {
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.report-appendix {
+  margin-top: 48px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+.report-appendix summary {
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--teal-dim);
+}
+.appendix-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+.appendix-grid img {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--paper-dim);
+  display: block;
+}
+@media (max-width: 720px) {
+  .appendix-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 .pdf-cta {
   display: inline-flex;
   align-items: center;
