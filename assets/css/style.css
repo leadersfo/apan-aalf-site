@@ -278,6 +278,67 @@ ul.check li::before {
   .grid-gallery { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* ---------- Report cards (homepage forum-history grid) ---------- */
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+.report-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 128px;
+  padding: 22px 18px 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--line);
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.report-card-num {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.08em;
+  color: var(--teal-dim);
+}
+.report-card-place {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.28;
+  color: var(--ink);
+}
+.report-card-go {
+  margin-top: auto;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--gray);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+.report-card:hover {
+  transform: translateY(-5px);
+  border-top-color: var(--teal-dim);
+  border-color: var(--teal-dim);
+  box-shadow: 0 16px 30px rgba(31, 84, 128, 0.14);
+}
+.report-card:hover .report-card-go {
+  opacity: 1;
+  transform: translateX(0);
+  color: var(--teal-dim);
+}
+@media (max-width: 860px) {
+  .report-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 560px) {
+  .report-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* ---------- Timeline (report index / node strip) ---------- */
 .timeline {
   display: flex;
