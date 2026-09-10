@@ -14,3 +14,4 @@
 ::1 - - [10/Sep/2026 09:00:53] "GET /assets/img/gallery/nren4-300x200.jpg HTTP/1.1" 200 -
 ::1 - - [10/Sep/2026 09:00:53] "GET /assets/img/gallery/nren2-300x225.jpg HTTP/1.1" 200 -
 ::1 - - [10/Sep/2026 09:00:53] "GET /assets/js/network.js HTTP/1.1" 200 -
+::1 - - [10/Sep/2026 09:00:56] "GET /assets/img/banner.png HTTP/1.1" 200 -
